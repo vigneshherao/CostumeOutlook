@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CostumeOutlook-Signup</title>
+    <link rel="stylesheet" href="signup1.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="login-container">
+        <div class="circle circle-one"></div>
+        <div class="form-container">
+          <h1 class="opacity">SignUp</h1>
+          <form action="signup1.php" method="post">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              size="33%"
+              required
+              placeholder="name"
+            />
+            <input
+              type="number"
+              id="phoneno"
+              name="phoneno"
+              size="33%"
+              required
+              placeholder="phoneno"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              size="33%"
+              required
+              placeholder="email"
+            />
+            <input
+              type="text"
+              id="Password"
+              name="password"
+              size="33%"
+              required
+              placeholder="Password"
+            />
+
+            <button class="opacity" onclick="display()">SUBMIT</button>
+          </form>
+          <div class="register-forget opacity">
+            <a href="login1.html">LOGIN</a>
+            <a href="index.html">HOME</a>
+          </div>
+        </div>
+        <div class="circle circle-two"></div>
+      </div>
+      <div class="theme-btn-container"></div>
+    </section>
+    <script>
+      function display() {
+        alert("Account created sucessfully!");
+      }
+    </script>
+  </body>
+</html>

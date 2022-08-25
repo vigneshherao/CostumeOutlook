@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="scrprt.js" />
+
+    <title>COSTUME OUTLOOK</title>
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#"><img src="image/New Project.jpg" class="logo" width="100px"></a>
+
+
+      <nav>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="adminpanel.html">Home</a></li>
+          <li><a href="admin_viewproduct.html">View Items</a></li>
+          <li>
+            <a href="Order.html">Orders <i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <li>
+            <a href="#">
+              logout <i class="fa fa-user" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+  </section>
+  <h2 id="head">Track Pant Items </h2>
+    <form action="admin_pant_add.php" id="frm" method="post" enctype="multipart/form-data">
+      
+
+      
+
+      <label for="name">compnay name</label><br />
+      <input type="text" placeholder=" companyname....." name="cname" id="cname" /><br />
+
+      <label for="name">name of item</label><br />
+      <input type="text" placeholder=" itemname....." name="iname" id="iname" /><br />
+
+      <label for="prize">item prize</label><br />
+      <input type="number" placeholder=" itemprize" name="prize" id="prize" /><br /><br />
+
+     
+      <label for="image">Add image</label><br />
+      <input type="file" multiple="multiple" id="image" name="image" /><br />
+      <br />
+      <br />
+      <input type="submit" id="submit" name="upload" value="upload">
+      <!-- <button onclick="btn()" name="upload">ADD ITEM</button> -->
+    </form>
+
+    <script>
+      function btn() {
+        alert("Product added succesfully");
+      }
+    </script>
+  </body>
+</html>

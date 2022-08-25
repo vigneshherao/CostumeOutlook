@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img src="image/New Project.jpg" class="logo" width="100px"
+      /></a>
+
+      <nav>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="adminpanel.html">Home</a></li>
+          <li><a href="adminpanel.html">Add item</a></li>
+          <li>
+            <a href="admin_delete.html"><i class="fas fa-trash-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">logout <i class="fa fa-user" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <form
+      action="admin_pant_delete.php"
+      id="frm"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="name">Id</label><br />
+      <input type="number" placeholder="Id" name="id" id="id" /><br />
+
+      <input type="submit" name="upload" id="submit" value="DELETE" />
+    </form>
+  </body>
+</html>
